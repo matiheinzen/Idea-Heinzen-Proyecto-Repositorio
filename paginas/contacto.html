@@ -7,6 +7,7 @@
     <title>H4 LIBRERIA </title>
     <link rel="shortcut icon" href="../Recursos/icono.jpg">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@700&display=swap');
@@ -15,7 +16,7 @@
     <script src="https://kit.fontawesome.com/f76be3a348.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="contenedorAmc">
+    <div id="contenedorAmc" class="animate__animated animate__slideInUp">
         <header class="area">
             <nav id="navbar" class="area">
                 <ul> 
@@ -55,12 +56,12 @@
             <form action="">
                 <fieldset id="contactos" class="texContacto">
                     <legend id="contacto" class="legendaContacto">Informacion personal</legend>
-                    <label for="nombre"> Nombre y Apellido: </label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-                    <label for="email"> Email: </label>
-                    <input type="email" name="email" id="email" placeholder="Ingrese su email">
-                    <label for="password"> Contraseña: </label>
-                    <input type="tel" name="tel" id="password" placeholder="Telefono">
+                    <label for="nombre" class="animate__animated animate__lightSpeedInRight"> Nombre y Apellido: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="animate__animated animate__lightSpeedInLeft">
+                    <label for="email" class="animate__animated animate__lightSpeedInRight"> Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email" class="animate__animated animate__lightSpeedInLeft">
+                    <label for="password" class="animate__animated animate__lightSpeedInRight"> Contraseña: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefono" class="animate__animated animate__lightSpeedInLeft">
                     <textarea name="text" id="text" cols="70" rows="10"placeholder="agragar un comentario..."></textarea>
                     <div id="contacto" class="botton">
                         <input type="reset" value="BORRAR DATOS">
