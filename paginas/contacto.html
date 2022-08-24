@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H4 LIBRERIA </title>
+    <link rel="shortcut icon" href="../Recursos/icono.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mochiy+Pop+One&family=Quicksand:wght@700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/f76be3a348.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedorAmc">
+        <header class="area">
+            <nav id="navbar" class="area">
+                <ul> 
+                    <div >
+                        <img class="logoBusqueda"
+                        src="../Recursos/logo.jpg" 
+                        alt="LOGO DE LA EMPRESA">
+                    </div>
+                <li><a href="../index.html" >Inicio</a></li>
+                <li><a href="../paginas/articulos.html" >Articulos</a></li>
+                <li><a href="../paginas/mayorista.html" >Mayorista</a></li>
+                <li><a href="../paginas/combos.html" >Combos</a></li>
+                <li><a href="../paginas/contacto.html" >Contacto</a></li>
+                <input type="text" class="logoBusqueda" placeholder="Buscar">
+                </ul>
+            </nav>
+            <div class="menuAdaptable">
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <nav>
+                    <ul> 
+                    <li><a href="../index.html" >Inicio</a></li>
+                    <li><a href="../paginas/articulos.html" >Articulos</a></li>
+                    <li><a href="../paginas/mayorista.html" >Mayorista</a></li>
+                    <li><a href="../paginas/combos.html" >Combos</a></li>
+                    <li><a href="../paginas/contacto.html" >Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="h2"class="area">
+            <h2>Contactate con nosotros</h2>
+            <p>Dejanos tu consulta o pedido</p>
+        </main>
+        <section id="contactos" class="area">
+            <form action="">
+                <fieldset id="contactos" class="texContacto">
+                    <legend id="contacto" class="legendaContacto">Informacion personal</legend>
+                    <label for="nombre"> Nombre y Apellido: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                    <label for="password"> Contraseña: </label>
+                    <input type="tel" name="tel" id="password" placeholder="Telefono">
+                    <textarea name="text" id="text" cols="70" rows="10"placeholder="agragar un comentario..."></textarea>
+                    <div id="contacto" class="botton">
+                        <input type="reset" value="BORRAR DATOS">
+                        <input type="submit" value="ENVIAR MENSAJE">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <strong>
+            <footer>H4 ARTICULOS ESCOLARES</footer>
+            <i class="fa-brands fa-instagram">H4-libreria</i>
+            <i class="fa-brands fa-facebook">H4-libreria</i>
+            <i class="fa-brands fa-whatsapp">0342-154499754</i>
+        </strong>
+    </div>
+</body>
+</html>
