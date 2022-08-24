@@ -228,6 +228,7 @@ section div.comboDerecha{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10%;
 }
 section div.comboIzquierda{
     display: flex;
@@ -235,6 +236,7 @@ section div.comboIzquierda{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10%;
 }
 aside.area{
     margin: 0% 10%;
@@ -441,3 +443,48 @@ section form fieldset div.botton input:hover{
         align-items: center;
     }
 }
+/*------------------------------------------------------------------------------------------------*/
+/*transformaciones, animaciones, transcisiones*/
+table{
+    background-image: linear-gradient(to right, #e0ba99,#7A6653);
+}
+section#art{
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 5%;
+}
+@keyframes fondoAnimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+div.comboDerecha{
+    background-image:linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
+    background-size: 500%;
+    animation: fondoAnimado 15s infinite;
+    box-shadow: 5px 5px 8px black;
+}
+div.comboIzquierda{
+    background-image:linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+    background-size: 500%;
+    animation: fondoAnimado 15s infinite;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 8px black;
+}
+section#combos p{
+    color: white;
+}
+.animate__animated.animate__slideInUp {
+    --animate-duration: 10s;
+}
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+/*------------------------------------------------------------------------------------------------*/
