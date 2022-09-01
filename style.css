@@ -212,13 +212,13 @@ section div.comboIzquierda{
     justify-content: space-around;
 }
 aside.area{
-    margin: auto;
+    margin: 0% 10%;
 }
 aside#cajaTexto{
     overflow: auto;
     background-color: #E0BA99;
     border: 1px solid black; 
-    padding: 2% 3%;
+    padding: 2% 2%;
 }
 aside.texto{
     display: none;
@@ -234,12 +234,10 @@ section #contactos{
     border: 3px solid black;
 }
 section form fieldset legend.legendaContacto{
-    font-size: 35px;
-    padding: 1% 2%;
-    border: 3px solid black;
-    background-color: #bdc967;
-    margin: auto;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
 }
 section form fieldset.texContacto{
     display: flex;
