@@ -192,17 +192,10 @@ table td.precio {
 }
 /*------------------------------------------------------------------------------------------------*/
 /*combos*/
-section#combos{
-    display: block;
-}
 section#combos img{
-    width: 250px;
+    width: 200px;
     height: auto;
     margin: 10px;
-}
-section#combos p{
-    width: 250px;
-    height: auto;
 }
 section div.comboDerecha{
     display: flex;
@@ -210,7 +203,6 @@ section div.comboDerecha{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10%;
 }
 section div.comboIzquierda{
     display: flex;
@@ -218,15 +210,15 @@ section div.comboIzquierda{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10%;
 }
 aside.area{
-    margin: 0% 10%;
+    margin: auto;
 }
 aside#cajaTexto{
     overflow: auto;
     background-color: #E0BA99;
     border: 1px solid black; 
+    padding: 2% 3%;
 }
 aside.texto{
     display: none;
@@ -271,16 +263,6 @@ section form fieldset textarea{
     margin: 30px;
     padding:20px 20px;
     border-radius: 50px;
-}
-section form fieldset div.botton input{
-    margin: 10px 10px;
-    padding: 10px 10px;
-    font-size:20px;
-    font-family: 'Quicksand', sans-serif;
-}
-section form fieldset div.botton input:hover{
-    background-color: #000;
-    color: white;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*medias*/
