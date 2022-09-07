@@ -1,0 +1,50 @@
+/*grids*/
+div#contenedorIc{/*inicio, contacto*/
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section aside"
+    "strong strong";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+div#contenedorAmc{ /*articulos, mayorista y contactos*/
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "strong strong";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
+    height: 100vh;
+}
+div#contenedorCombos{/*combos*/
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "section section"
+    "strong strong";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 30px;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+strong{
+    grid-area: strong;
+}

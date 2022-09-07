@@ -1,0 +1,76 @@
+/*medias*/
+@media (min-width: 320px) and  (max-width: 768px){
+    body{
+        height: 100vh;
+        header{
+            font-size: 1.2rem;
+            & .navbar img{
+                width: 50px;
+                height: auto;
+            }
+        }
+        p{
+            font-size: 1rem;
+            line-height: normal;
+            margin: 3%;
+        }
+        main {
+            & h1{
+            font-size: 2rem;
+            }
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        h5{
+            font-size: 1.2rem;
+        }
+        strong{
+            font-size: 1rem;
+            #no{
+                display: none;
+            }
+        }
+        section#art{
+            display: flex;
+            & #art img{
+                width: 150px;
+                height: auto;
+                margin: 0 100px;
+            }
+        }
+        table{
+            height: 100vh;
+            margin: 1% auto 5%;
+            & .codigo{
+                display: none;
+            }
+            & td{
+                padding: 10px 10px;
+            }
+        }
+        section#combos img{
+            width: 70px;
+            height: auto;
+        }
+        section form fieldset input{
+            padding:10px 50px;
+            width: 95%;
+        }
+        section form fieldset textarea{
+            width: 95%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (min-width: 320px) and  (max-width: 805px){
+    strong{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & #no{
+            display: none;
+        }
+    }
+}

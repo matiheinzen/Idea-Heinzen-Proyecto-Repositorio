@@ -1,0 +1,369 @@
+/*principales, se repiten en todas las paginas*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(#BA9A7F);
+  height: 100vh;
+}
+
+/*barra de navegacion*/
+header {
+  font-family: var("Quicksand", sans-serif);
+  font-size: 2rem;
+  width: 100%;
+}
+header .navbar {
+  margin: 2% 2%;
+  background-color: var(#E0BA99);
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: var(#246d24);
+  text-align: center;
+}
+header .navbar ul li a:hover {
+  text-shadow: 2px 2px 2px white;
+  color: black;
+}
+header .navbar img {
+  width: 100px;
+  height: auto;
+}
+
+/*footer*/
+strong {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: var(#E0BA99);
+  justify-content: space-evenly;
+  font-family: var("Mochiy Pop One", sans-serif);
+  font-size: 1.25rem;
+  padding: 2% 5%;
+}
+strong i {
+  padding: 10px;
+}
+
+/*textos*/
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var("Mochiy Pop One", sans-serif);
+  font-size: 2.5rem;
+  margin: 3%;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var("Quicksand", sans-serif);
+  line-height: 2.5rem;
+}
+
+span {
+  text-shadow: 2px 2px 2px white;
+  color: #000;
+}
+
+h5 {
+  text-align: center;
+  color: var(#246d24);
+  font-family: var("Mochiy Pop One", sans-serif);
+  font-size: 1.25rem;
+}
+
+/*grids*/
+div#contenedorIc { /*inicio, contacto*/
+  display: grid;
+  grid-template-areas: "header header" "main main" "section aside" "strong strong";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+div#contenedorAmc { /*articulos, mayorista y contactos*/
+  display: grid;
+  grid-template-areas: "header header" "main main" "section section" "strong strong";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto;
+  height: 100vh;
+}
+
+div#contenedorCombos { /*combos*/
+  display: grid;
+  grid-template-areas: "header header" "main aside" "section section" "strong strong";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  gap: 30px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+strong {
+  grid-area: strong;
+}
+
+/*main*/
+main h1 {
+  margin: 1% auto;
+  text-align: center;
+  font-family: var("Dancing Script", cursive);
+  font-size: 5rem;
+  color: var(#74573f);
+}
+
+/*sections*/
+/*section inicio*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*section articulos*/
+section#art {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0% 5%;
+  background-color: var(#97826e);
+}
+
+/*section combos*/
+section#combos img {
+  width: 200px;
+  height: auto;
+  margin: 5px;
+}
+section#combos div.comboDerecha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+section#combos div.comboIzquierda {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*section contactos*/
+section#contactos {
+  display: flex;
+  justify-content: center;
+  background-image: url(./Recursos/fondocontacto.jpg);
+  margin: 3% auto;
+  border-radius: 100px;
+  border: 3px solid black;
+}
+section#contactos form fieldset legend.legendaContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+section#contactos form fieldset.texContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: var("Quicksand", sans-serif);
+}
+section#contactos form fieldset input {
+  text-align: center;
+  font-family: var("Quicksand", sans-serif);
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px 150px;
+  margin: 1%;
+}
+section#contactos form fieldset textarea {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  margin: 30px;
+  padding: 20px 20px;
+  border-radius: 50px;
+  width: 500px;
+  height: auto;
+}
+
+/*aside*/
+aside .area {
+  margin: 0% 10%;
+}
+aside #cajaTexto {
+  overflow: auto;
+  background-color: var(#E0BA99);
+  border: 1px solid black;
+  padding: 2% 2%;
+}
+aside .texto {
+  display: none;
+}
+
+/*transformaciones, animaciones, transcisiones*/
+table {
+  background-image: linear-gradient(to right, #e0ba99, #7A6653);
+}
+
+section#art {
+  box-shadow: 5px 5px 10px black;
+  margin-bottom: 5%;
+}
+
+@-webkit-keyframes fondoAnimado {
+  0% {
+    background-image: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-image: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+div.comboDerecha {
+  background-image: linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
+  background-size: 500%;
+  -webkit-animation: fondoAnimado 15s infinite;
+          animation: fondoAnimado 15s infinite;
+  box-shadow: 5px 5px 8px black;
+}
+
+div.comboIzquierda {
+  background-image: linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+  background-size: 500%;
+  -webkit-animation: fondoAnimado 15s infinite;
+          animation: fondoAnimado 15s infinite;
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 8px black;
+}
+
+section#combos p {
+  color: white;
+}
+
+.animate__animated.animate__slideInUp {
+  --animate-duration: 10s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+/*medias*/
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body header {
+    font-size: 1.2rem;
+  }
+  body header .navbar img {
+    width: 50px;
+    height: auto;
+  }
+  body p {
+    font-size: 1rem;
+    line-height: normal;
+    margin: 3%;
+  }
+  body main h1 {
+    font-size: 2rem;
+  }
+  body h2 {
+    font-size: 1.5rem;
+  }
+  body h5 {
+    font-size: 1.2rem;
+  }
+  body strong {
+    font-size: 1rem;
+  }
+  body strong #no {
+    display: none;
+  }
+  body section#art {
+    display: flex;
+  }
+  body section#art #art img {
+    width: 150px;
+    height: auto;
+    margin: 0 100px;
+  }
+  body table {
+    height: 100vh;
+    margin: 1% auto 5%;
+  }
+  body table .codigo {
+    display: none;
+  }
+  body table td {
+    padding: 10px 10px;
+  }
+  body section#combos img {
+    width: 70px;
+    height: auto;
+  }
+  body section form fieldset input {
+    padding: 10px 50px;
+    width: 95%;
+  }
+  body section form fieldset textarea {
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 805px) {
+  strong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  strong #no {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ body{
 }
 header{
     font-family: 'Quicksand', sans-serif;
-    font-size:x-large;
+    font-size:2rem;
     width: 100%;
 }
 header nav.navbar{
@@ -129,7 +129,6 @@ section{
     margin-left: 10%;
     margin-right: 10%;
 }
-
 /*------------------------------------------------------------------------------------------------*/
 /*articulos*/
 section#art{

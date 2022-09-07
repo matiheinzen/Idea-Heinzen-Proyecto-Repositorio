@@ -1,0 +1,15 @@
+/*aside*/
+aside{
+    & .area{
+        margin: 0% 10%;
+    }
+    & #cajaTexto{
+        overflow: auto;
+        background-color: var($colorNav);
+        border: 1px solid black; 
+        padding: 2% 2%;
+    }
+    & .texto{
+    display: none;
+    }
+}

@@ -1,0 +1,75 @@
+/*principales, se repiten en todas las paginas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var($fondoCompleto);
+    height: 100vh;
+}
+/*barra de navegacion*/
+header{
+    font-family: var($textP);
+    font-size:2rem;
+    width: 100%;
+    & .navbar{
+        margin: 2% 2%;
+        background-color:var($colorNav) ;
+    }
+    & .navbar ul li a{
+        text-decoration: none;
+        color: var($colorText);
+        text-align: center;
+    }
+    & .navbar ul li a:hover{
+        text-shadow:2px 2px 2px white; 
+        color:black;
+    }
+    & .navbar img{
+        width: 100px;
+        height: auto;
+    }
+}
+/*footer*/
+strong{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: var($colorNav);
+    justify-content: space-evenly;
+    font-family: var($textH2);
+    font-size: 1.25rem;
+    padding: 2% 5%;
+    i{
+    padding: 10px;
+    }
+}
+
+/*textos*/
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var($textH2);
+    font-size: 2.5rem;
+    margin:3%;
+}
+p{
+    text-align: center;
+    font-size:1.5rem;
+    font-family: var($textP);
+    line-height: 2.5rem;
+}
+span{
+    text-shadow:2px 2px 2px white; 
+    color:#000;
+}
+h5{
+    text-align: center;
+    color:var($colorText);
+    font-family: var($textH2);
+    font-size: 1.25rem;
+}
+
