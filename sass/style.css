@@ -6,23 +6,23 @@
 }
 
 body {
-  background-color: var(#BA9A7F);
+  background-color: #BA9A7F;
   height: 100vh;
 }
 
 /*barra de navegacion*/
 header {
-  font-family: var("Quicksand", sans-serif);
+  font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
   width: 100%;
 }
 header .navbar {
   margin: 2% 2%;
-  background-color: var(#E0BA99);
+  background-color: #E0BA99;
 }
 header .navbar ul li a {
   text-decoration: none;
-  color: var(#246d24);
+  color: #246d24;
   text-align: center;
 }
 header .navbar ul li a:hover {
@@ -40,9 +40,9 @@ strong {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  background-color: var(#E0BA99);
+  background-color: #E0BA99;
   justify-content: space-evenly;
-  font-family: var("Mochiy Pop One", sans-serif);
+  font-family: "Mochiy Pop One", sans-serif;
   font-size: 1.25rem;
   padding: 2% 5%;
 }
@@ -55,7 +55,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var("Mochiy Pop One", sans-serif);
+  font-family: "Mochiy Pop One", sans-serif;
   font-size: 2.5rem;
   margin: 3%;
 }
@@ -63,7 +63,7 @@ h2 {
 p {
   text-align: center;
   font-size: 1.5rem;
-  font-family: var("Quicksand", sans-serif);
+  font-family: "Quicksand", sans-serif;
   line-height: 2.5rem;
 }
 
@@ -74,8 +74,8 @@ span {
 
 h5 {
   text-align: center;
-  color: var(#246d24);
-  font-family: var("Mochiy Pop One", sans-serif);
+  color: #246d24;
+  font-family: "Mochiy Pop One", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -129,9 +129,9 @@ strong {
 main h1 {
   margin: 1% auto;
   text-align: center;
-  font-family: var("Dancing Script", cursive);
+  font-family: "Dancing Script", cursive;
   font-size: 5rem;
-  color: var(#74573f);
+  color: #74573f;
 }
 
 /*sections*/
@@ -221,7 +221,7 @@ aside .area {
 }
 aside #cajaTexto {
   overflow: auto;
-  background-color: var(#E0BA99);
+  background-color: #E0BA99;
   border: 1px solid black;
   padding: 2% 2%;
 }

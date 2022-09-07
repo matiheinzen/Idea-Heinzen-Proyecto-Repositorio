@@ -5,7 +5,7 @@ aside{
     }
     & #cajaTexto{
         overflow: auto;
-        background-color: var($colorNav);
+        background-color: $colorNav;
         border: 1px solid black; 
         padding: 2% 2%;
     }

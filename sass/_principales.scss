@@ -5,21 +5,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var($fondoCompleto);
+    background-color: $fondoCompleto;
     height: 100vh;
 }
 /*barra de navegacion*/
 header{
-    font-family: var($textP);
+    font-family: $textP;
     font-size:1.5rem;
     width: 100%;
     & .navbar{
         margin: 2% 2%;
-        background-color:var($colorNav) ;
+        background-color:$colorNav ;
     }
     & .navbar ul li a{
         text-decoration: none;
-        color: var($colorText);
+        color: $colorText;
         text-align: center;
     }
     & .navbar ul li a:hover{
@@ -37,9 +37,9 @@ strong{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    background-color: var($colorNav);
+    background-color: $colorNav;
     justify-content: space-evenly;
-    font-family: var($textH2);
+    font-family: $textH2;
     font-size: 1.25rem;
     padding: 2% 5%;
     i{
@@ -52,14 +52,14 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var($textH2);
+    font-family: $textH2;
     font-size: 2.5rem;
     margin:3%;
 }
 p{
     text-align: center;
     font-size:1.5rem;
-    font-family: var($textP);
+    font-family: $textP;
     line-height: 2.5rem;
 }
 span{
@@ -68,8 +68,8 @@ span{
 }
 h5{
     text-align: center;
-    color:var($colorText);
-    font-family: var($textH2);
+    color:$colorText;
+    font-family: $textH2;
     font-size: 1.25rem;
 }
 
