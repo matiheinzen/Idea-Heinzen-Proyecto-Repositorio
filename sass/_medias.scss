@@ -22,7 +22,7 @@
             }
         }
         h2{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         h5{
             font-size: 1.2rem;
@@ -55,14 +55,17 @@
             width: 70px;
             height: auto;
         }
-        section form fieldset input{
-            padding:10px 50px;
-            width: 95%;
-        }
-        section form fieldset textarea{
-            width: 95%;
-            height: auto;
-            margin-bottom: 10px;
+        section#contactos{
+            margin: 2% 2%;
+            & form fieldset input{
+                padding:10px 50px;
+                width: 90%;
+            }
+            & form fieldset textarea{
+                width: 95%;
+                height: auto;
+                margin-bottom: 10px;
+            }
         }
     }
 }

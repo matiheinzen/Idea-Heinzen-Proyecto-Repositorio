@@ -343,7 +343,7 @@ section#combos p {
     margin: 0% 3%;
   }
   body h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   body h5 {
     font-size: 1.2rem;
@@ -376,11 +376,14 @@ section#combos p {
     width: 70px;
     height: auto;
   }
-  body section form fieldset input {
-    padding: 10px 50px;
-    width: 95%;
+  body section#contactos {
+    margin: 2% 2%;
   }
-  body section form fieldset textarea {
+  body section#contactos form fieldset input {
+    padding: 10px 50px;
+    width: 90%;
+  }
+  body section#contactos form fieldset textarea {
     width: 95%;
     height: auto;
     margin-bottom: 10px;
