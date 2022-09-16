@@ -19,6 +19,7 @@ header {
 header .navbar {
   margin: 2% 2%;
   background-color: #E0BA99;
+  box-shadow: 5px 5px 10px #246d24;
 }
 header .navbar ul li a {
   text-decoration: none;
@@ -149,15 +150,22 @@ section#art {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0% 5%;
   background-color: #97826e;
 }
 
 /*section combos*/
+section#combos {
+  display: block;
+}
 section#combos img {
+  width: 250px;
   width: 200px;
   height: auto;
-  margin: 5px;
+  margin: 10px;
+}
+section#combos p {
+  width: 250px;
+  height: auto;
 }
 section#combos div.comboDerecha {
   display: flex;
@@ -165,13 +173,15 @@ section#combos div.comboDerecha {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 5%;
 }
-section#combos div.comboIzquierda {
+section#combos .comboIzquierda {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 5%;
 }
 
 /*section contactos*/
@@ -184,10 +194,8 @@ section#contactos {
   border: 3px solid black;
 }
 section#contactos form fieldset legend.legendaContacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 20px;
+  text-align: center;
+  font-size: 25px;
 }
 section#contactos form fieldset.texContacto {
   display: flex;
@@ -243,17 +251,22 @@ table td.precio {
 }
 
 /*aside*/
-aside .area {
-  margin: 0% 10%;
+aside.area {
+  margin: 0% 10;
 }
-aside #cajaTexto {
+
+aside#cajaTexto {
   overflow: auto;
   background-color: #E0BA99;
   border: 1px solid black;
-  padding: 2% 2%;
 }
-aside .texto {
+
+aside.texto {
   display: none;
+}
+
+aside.area {
+  margin: 0% 10%;
 }
 
 /*transformaciones, animaciones, transcisiones*/
@@ -354,14 +367,6 @@ section#combos p {
   body strong #no {
     display: none;
   }
-  body section#art {
-    display: flex;
-  }
-  body section#art #art img {
-    width: 150px;
-    height: auto;
-    margin: 0 100px;
-  }
   body table {
     height: 100vh;
     margin: 1% auto 5%;
@@ -378,6 +383,11 @@ section#combos p {
   }
   body section#contactos {
     margin: 2% 2%;
+  }
+  body section#contactos form fieldset legend.legendaContacto {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
   }
   body section#contactos form fieldset input {
     padding: 10px 50px;

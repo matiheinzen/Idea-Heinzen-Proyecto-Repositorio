@@ -33,14 +33,6 @@
                 display: none;
             }
         }
-        section#art{
-            display: flex;
-            & #art img{
-                width: 150px;
-                height: auto;
-                margin: 0 100px;
-            }
-        }
         table{
             height: 100vh;
             margin: 1% auto 5%;
@@ -57,6 +49,11 @@
         }
         section#contactos{
             margin: 2% 2%;
+            & form fieldset legend.legendaContacto{
+                text-align: center;
+                padding-top: 2%;
+                font-size: 20px;
+                }
             & form fieldset input{
                 padding:10px 50px;
                 width: 90%;

@@ -1,15 +1,15 @@
 /*aside*/
-aside{
-    & .area{
-        margin: 0% 10%;
-    }
-    & #cajaTexto{
-        overflow: auto;
-        background-color: $colorNav;
-        border: 1px solid black; 
-        padding: 2% 2%;
-    }
-    & .texto{
+aside.area{
+    margin: 0% 10;
+}
+aside#cajaTexto{
+    overflow: auto;
+    background-color: $colorNav;
+    border: 1px solid black; 
+}
+aside.texto{
     display: none;
-    }
+}
+aside.area{
+        margin: 0% 10%;
 }

@@ -16,6 +16,7 @@ header{
     & .navbar{
         margin: 2% 2%;
         background-color:$colorNav ;
+        box-shadow:  5px 5px  10px $colorText;
     }
     & .navbar ul li a{
         text-decoration: none;

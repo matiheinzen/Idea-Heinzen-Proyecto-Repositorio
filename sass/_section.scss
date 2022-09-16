@@ -12,15 +12,20 @@ section#art{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0% 5%;
     background-color: $colorArt;
 }
 /*section combos*/
 section#combos{
+    display: block;
     & img{
+        width: 250px;
         width: 200px;
-        height: auto; 
-        margin: 5px;
+        height: auto;
+        margin: 10px;
+    }
+    & p{
+        width: 250px;
+        height: auto;
     }
     & div.comboDerecha{
         display: flex;
@@ -28,13 +33,15 @@ section#combos{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        margin-bottom: 5%;
     }
-    & div.comboIzquierda{
+    & .comboIzquierda{
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        margin-bottom: 5%;
     }
 }
 /*section contactos*/
@@ -46,10 +53,8 @@ section#contactos{
     border-radius: 100px;
     border: 3px solid black;
     & form fieldset legend.legendaContacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
+    text-align: center;
+    font-size: 25px;
     }
     & form fieldset.texContacto{
     display: flex;
