@@ -81,6 +81,18 @@ section#contactos{
     width: 500px;
     height: auto;
     }
+    @mixin boton{
+        margin: 10px auto;
+        padding: 10px 50px;
+        font-size:2rem;
+        font-family: $textH1;
+        color: $colorText;
+        background-color: $fondoCompleto;
+        border-radius: 10px;
+    }
+    .boton--default{
+        @include boton;
+    }
 }
 /*section mayorista*/
 table{

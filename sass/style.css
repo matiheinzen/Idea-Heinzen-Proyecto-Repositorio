@@ -1,3 +1,19 @@
+.color-fondo {
+  background-color: #BA9A7F;
+}
+
+.color-barra {
+  background-color: #E0BA99;
+}
+
+.color-fondoArticulos {
+  background-color: #97826e;
+}
+
+.color-Table {
+  background-color: #f5b580;
+}
+
 /*principales, se repiten en todas las paginas*/
 * {
   margin: 0;
@@ -222,6 +238,15 @@ section#contactos form fieldset textarea {
   width: 500px;
   height: auto;
 }
+section#contactos .boton--default {
+  margin: 10px auto;
+  padding: 10px 50px;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #246d24;
+  background-color: #BA9A7F;
+  border-radius: 10px;
+}
 
 /*section mayorista*/
 table {
@@ -302,22 +327,21 @@ section#art {
     background-position: 0% 50%;
   }
 }
-div.comboDerecha {
+div.extend, div.extend--izquierda, div.extend--derecha {
   background-image: linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
   background-size: 500%;
   -webkit-animation: fondoAnimado 15s infinite;
           animation: fondoAnimado 15s infinite;
   box-shadow: 5px 5px 8px black;
-}
-
-div.comboIzquierda {
-  background-image: linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
-  background-size: 500%;
-  -webkit-animation: fondoAnimado 15s infinite;
-          animation: fondoAnimado 15s infinite;
   width: 100%;
   height: auto;
-  box-shadow: 5px 5px 8px black;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+div.extend--izquierda {
+  background-image: linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
 }
 
 section#combos p {

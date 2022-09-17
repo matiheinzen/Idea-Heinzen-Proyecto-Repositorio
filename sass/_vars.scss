@@ -7,3 +7,15 @@ $colorTabla: #f5b580;
 $textH1: 'Dancing Script', cursive;
 $textH2:'Mochiy Pop One', sans-serif;
 $textP: 'Quicksand', sans-serif;
+
+$colores: (
+    fondo: #BA9A7F,
+    barra: #E0BA99,
+    fondoArticulos: #97826e,
+    Table: #f5b580,
+);
+@each $nombre, $valor in $colores{
+    .color-#{$nombre}{
+        background-color: $valor;
+    }
+}
