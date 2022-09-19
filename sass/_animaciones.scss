@@ -24,9 +24,6 @@ div.extend{
     box-shadow: 5px 5px 8px black;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content:space-around;
-    margin-bottom: 60px;
 }
 div.extend--derecha{
     @extend .extend;

@@ -183,17 +183,9 @@ section#combos p {
   width: 250px;
   height: auto;
 }
-section#combos div.comboDerecha {
+section#combos div.extend, section#combos div.extend--izquierda, section#combos div.extend--derecha {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5%;
-}
-section#combos .comboIzquierda {
-  display: flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -232,7 +224,7 @@ section#contactos form fieldset textarea {
   background-color: #000;
   color: white;
   text-align: center;
-  margin: 30px;
+  margin: 0 30px;
   padding: 20px 20px;
   border-radius: 50px;
   width: 500px;
@@ -243,9 +235,17 @@ section#contactos .boton--default {
   padding: 10px 50px;
   font-size: 2rem;
   font-family: "Dancing Script", cursive;
-  color: #246d24;
+  color: #74573f;
   background-color: #BA9A7F;
   border-radius: 10px;
+}
+section#contactos .hover :hover {
+  background-color: rgb(66, 175, 66);
+  color: black;
+}
+section#contactos .hoverDos :hover {
+  background-color: rgb(224, 72, 72);
+  color: black;
 }
 
 /*section mayorista*/
@@ -276,22 +276,24 @@ table td.precio {
 }
 
 /*aside*/
-aside.area {
-  margin: 0% 10;
-}
-
 aside#cajaTexto {
   overflow: auto;
   background-color: #E0BA99;
   border: 1px solid black;
+  margin: 0 10%;
 }
 
 aside.texto {
   display: none;
 }
 
-aside.area {
-  margin: 0% 10%;
+aside#gifs {
+  width: 50%;
+  margin: 1% auto;
+}
+aside#gifs .tamanoGifs {
+  width: 100%;
+  height: 450px;
 }
 
 /*transformaciones, animaciones, transcisiones*/
@@ -335,9 +337,6 @@ div.extend, div.extend--izquierda, div.extend--derecha {
   box-shadow: 5px 5px 8px black;
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 60px;
 }
 
 div.extend--izquierda {
@@ -401,10 +400,6 @@ section#combos p {
   body table td {
     padding: 10px 10px;
   }
-  body section#combos img {
-    width: 70px;
-    height: auto;
-  }
   body section#contactos {
     margin: 2% 2%;
   }
@@ -422,6 +417,18 @@ section#combos p {
     height: auto;
     margin-bottom: 10px;
   }
+  body section#contactos .boton--default {
+    font-size: 1.5rem;
+    color: black;
+  }
+  body aside#gifs {
+    width: 90%;
+    margin: auto;
+  }
+  body aside#gifs .tamanoGifs {
+    width: 100%;
+    height: 450px;
+  }
 }
 @media (min-width: 320px) and (max-width: 805px) {
   strong {
@@ -431,5 +438,15 @@ section#combos p {
   }
   strong #no {
     display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  section#combos img {
+    display: none;
+  }
+  section#combos p {
+    margin: auto;
+    width: 100vh;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
