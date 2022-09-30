@@ -1,0 +1,29 @@
+/*--------------------combos----------------------*/
+section.combos{
+    margin: 0 10%;
+    color: white;
+    font-family: $textP;
+    font-size: 1.5rem;
+    & img{
+        width: 200px;
+        height: auto;
+        margin: 10px;
+    }
+    & ul li{
+        list-style: none;
+        text-align: center;
+    }
+    & .extend{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3% 0;
+    }
+}
+aside.combos{
+    overflow: auto;
+    background-color: $colorNav;
+    margin: 0 10%;
+    border: 1px solid black
+}
+/*---------------------fin combos---------------------------*/

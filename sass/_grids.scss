@@ -1,11 +1,11 @@
-/*grids*/
+/*-----------------------------grids----------------------------------------------------*/
 div#contenedorIc{/*inicio, contacto*/
     display: grid;
     grid-template-areas: 
     "header header"
     "main main"
     "section aside"
-    "strong strong";
+    "footer footer";
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
@@ -16,7 +16,7 @@ div#contenedorAmc{ /*articulos, mayorista y contactos*/
     "header header"
     "main main"
     "section section"
-    "strong strong";
+    "footer footer";
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: auto auto;
     height: 100vh;
@@ -27,7 +27,7 @@ div#contenedorCombos{/*combos*/
     "header header"
     "main aside"
     "section section"
-    "strong strong";
+    "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100vh;
@@ -45,6 +45,7 @@ section{
 aside{
     grid-area: aside;
 }
-strong{
-    grid-area: strong;
+footer{
+    grid-area: footer;
 }
+/*------------------------------------fin grids-------------------------------------*/

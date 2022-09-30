@@ -1,0 +1,32 @@
+/*------------------inicio------------------*/
+main.inicio{
+    margin: 1% auto;
+    & h1{
+        text-align: center;
+        font-family: $textH1;
+        font-size: 4.5rem;
+        color: $colorH1;
+    }
+    & img{
+        width: 100%;
+        height: 450px;
+    }
+}
+section.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+aside.inicio{
+    & .carousel{
+        width: 50%;
+        height: auto;
+        margin: 1% auto;
+        & .tamanoGifs{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+/*------------------ fin inicio------------------*/

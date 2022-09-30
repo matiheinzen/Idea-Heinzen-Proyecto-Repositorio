@@ -1,10 +1,8 @@
-/*transformaciones, animaciones, transcisiones*/
-table{
-    background-image: linear-gradient(to right, #e0ba99,#7A6653);
-}
-section#art{
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 5%;
+/*---------------------transformaciones, animaciones, transcisiones--------------------------------------*/
+section.mayorista{
+    & table{
+        background-image: linear-gradient(to right, #e0ba99,#7A6653);
+    }
 }
 @keyframes fondoAnimado{
     0%{
@@ -17,23 +15,19 @@ section#art{
         background-position: 0% 50%;
     }
 }
-div.extend{
-    background-image:linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
-    background-size: 500%;
-    animation: fondoAnimado 15s infinite;
-    box-shadow: 5px 5px 8px black;
-    width: 100%;
-    height: auto;
-}
-div.extend--derecha{
-    @extend .extend;
-}
-div.extend--izquierda{
-    @extend .extend;
-    background-image:linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
-}
-section#combos p{
-    color: white;
+section.combos{
+    .extend{
+        background-image:linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
+        background-size: 500%;
+        animation: fondoAnimado 15s infinite;
+        box-shadow: 5px 5px 8px black;
+        width: 100%;
+        height: auto;
+    }
+    .extend--izquierda{
+        @extend .extend;
+        background-image:linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+    }
 }
 .animate__animated.animate__slideInUp {
     --animate-duration: 10s;
@@ -42,3 +36,4 @@ section#combos p{
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
 }
+/*----------------------fin animaciones------------------------------------------------*/

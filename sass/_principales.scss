@@ -1,4 +1,4 @@
-/*principales, se repiten en todas las paginas*/
+/*-------------------------------principales, se repiten en todas las paginas------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body{
     background-color: $fondoCompleto;
     height: 100vh;
 }
-/*barra de navegacion*/
+
 header{
     font-family: $textP;
     font-size:1.5rem;
@@ -32,8 +32,8 @@ header{
         height: auto;
     }
 }
-/*footer*/
-strong{
+
+footer{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,11 +44,10 @@ strong{
     font-size: 1.25rem;
     padding: 2% 5%;
     i{
-    padding: 10px;
+    padding: 5px 15px;
     }
 }
 
-/*textos*/
 h2{
     display: flex;
     justify-content: center;
@@ -73,4 +72,5 @@ h5{
     font-family: $textH2;
     font-size: 1.25rem;
 }
+/*---------------------------fin principales---------------------*/
 
