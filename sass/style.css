@@ -1,0 +1,428 @@
+/*---------------variables---------------*/
+/*----------------------fin variables-------------------*/
+/*-----------------------------grids----------------------------------------------------*/
+div#contenedorIc { /*inicio, contacto*/
+  display: grid;
+  grid-template-areas: "header header" "main main" "section aside" "footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+div#contenedorAmc { /*articulos, mayorista y contactos*/
+  display: grid;
+  grid-template-areas: "header header" "main main" "section section" "footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto;
+  height: 100vh;
+}
+
+div#contenedorCombos { /*combos*/
+  display: grid;
+  grid-template-areas: "header header" "main aside" "section section" "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  gap: 30px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*------------------------------------fin grids-------------------------------------*/
+/*-------------------------------principales, se repiten en todas las paginas------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BA9A7F;
+  height: 100vh;
+}
+
+header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+}
+header .navbar {
+  margin: 2% 2%;
+  background-color: #E0BA99;
+  box-shadow: 5px 5px 10px #246d24;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: #246d24;
+  text-align: center;
+}
+header .navbar ul li a:hover {
+  text-shadow: 2px 2px 2px white;
+  color: black;
+}
+header .navbar img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: #E0BA99;
+  justify-content: space-evenly;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 1.25rem;
+  padding: 2% 5%;
+}
+footer i {
+  padding: 5px 15px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 2.5rem;
+  margin: 3%;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  line-height: 2.5rem;
+}
+
+span {
+  text-shadow: 2px 2px 2px white;
+  color: #000;
+}
+
+h5 {
+  text-align: center;
+  color: #246d24;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 1.25rem;
+}
+
+/*---------------------------fin principales---------------------*/
+/*------------------inicio------------------*/
+main.inicio {
+  margin: 1% auto;
+}
+main.inicio h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 4.5rem;
+  color: #74573f;
+}
+main.inicio img {
+  width: 100%;
+  height: 450px;
+}
+
+section.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+}
+
+aside.inicio .carousel {
+  width: 50%;
+  height: auto;
+  margin: 1% auto;
+}
+aside.inicio .carousel .tamanoGifs {
+  width: 100%;
+  height: 500px;
+}
+
+/*------------------ fin inicio------------------*/
+/*--------------articulos----------------*/
+section.articulos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------fin articulos----------------*/
+/*---------------------------mayorista----------------------*/
+section.mayorista table {
+  margin: 0 auto 2%;
+  border: 3px dotted black;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.mayorista table th {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 1.5rem;
+  border: dotted black;
+  padding: 20px;
+}
+section.mayorista table td.precio {
+  border-left: 3px dotted black;
+  border-bottom: 3px dotted black;
+}
+
+/*---------------------------fin mayorista-------------*/
+/*--------------------combos----------------------*/
+section.combos {
+  margin: 0 10%;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+}
+section.combos img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+section.combos ul li {
+  list-style: none;
+  text-align: center;
+}
+section.combos .extend, section.combos .extend--izquierda {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 0;
+}
+
+aside.combos {
+  overflow: auto;
+  background-color: #E0BA99;
+  margin: 0 10%;
+  border: 1px solid black;
+}
+
+/*---------------------fin combos---------------------------*/
+/*-------------------------contactos-----------------------*/
+section.contacto {
+  width: 80%;
+  height: auto;
+  background-image: url(../Recursos/fondocontacto.jpg);
+  margin: 0 auto 2%;
+  border: 3px solid black;
+  border-radius: 100px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+section.contacto form fieldset.texContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.contacto form fieldset input {
+  text-align: center;
+  border-radius: 100px;
+  width: 80%;
+  padding: 10px 0;
+  margin: 1% 0;
+  background-color: black;
+  color: #246d24;
+}
+section.contacto form fieldset textarea {
+  margin: 1% 0;
+  width: 80%;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: black;
+  color: #246d24;
+  text-align: center;
+}
+section.contacto .btn--default {
+  margin: 10px auto;
+  width: 500px;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #74573f;
+  background-color: #BA9A7F;
+  border-radius: 10px;
+}
+section.contacto .btnUno :hover {
+  background-color: rgb(16, 92, 16);
+  color: black;
+}
+section.contacto .btnDos :hover {
+  background-color: rgb(126, 22, 22);
+  color: black;
+}
+
+/*---------------------------------fin contacto------------------------*/
+/*-------------------------------------medias----------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body header {
+    font-size: 1.2rem;
+  }
+  body header .navbar img {
+    width: 50px;
+    height: auto;
+  }
+  body p {
+    font-size: 1rem;
+    line-height: normal;
+    margin: 3%;
+  }
+  body main h1 {
+    font-size: 2rem;
+    padding: 0% 2%;
+    margin: 0% 3%;
+  }
+  body main img {
+    width: 95%;
+    height: 150px;
+  }
+  body h2 {
+    font-size: 1.3rem;
+  }
+  body h5 {
+    font-size: 1.2rem;
+  }
+  body strong {
+    font-size: 1rem;
+  }
+  body strong #no {
+    display: none;
+  }
+  body table {
+    height: 100vh;
+    margin: 1% auto 5%;
+  }
+  body table .codigo {
+    display: none;
+  }
+  body table td {
+    padding: 10px 10px;
+  }
+  body section#contactos {
+    margin: 2% 2%;
+  }
+  body section#contactos form fieldset legend.legendaContacto {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
+  }
+  body section#contactos form fieldset input {
+    padding: 10px 50px;
+    width: 90%;
+  }
+  body section#contactos form fieldset textarea {
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  body section#contactos .boton--default {
+    font-size: 1.5rem;
+    color: black;
+  }
+  body aside#gifs {
+    width: 90%;
+    margin: auto;
+  }
+  body aside#gifs .tamanoGifs {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media (min-width: 320px) and (max-width: 805px) {
+  strong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  strong #no {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  section#combos img {
+    display: none;
+  }
+  section#combos p {
+    margin: auto;
+    width: 100vh;
+    height: auto;
+  }
+}
+/*-------------------------------------fin medias-------------------------------------------------*/
+/*---------------------transformaciones, animaciones, transcisiones--------------------------------------*/
+section.mayorista table {
+  background-image: linear-gradient(to right, #e0ba99, #7A6653);
+}
+
+@-webkit-keyframes fondoAnimado {
+  0% {
+    background-image: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-image: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section.combos .extend, section.combos .extend--izquierda {
+  background-image: linear-gradient(135deg, black, rgb(138, 70, 116), green, blue, brown);
+  background-size: 500%;
+  -webkit-animation: fondoAnimado 15s infinite;
+          animation: fondoAnimado 15s infinite;
+  box-shadow: 5px 5px 8px black;
+  width: 100%;
+  height: auto;
+}
+section.combos .extend--izquierda {
+  background-image: linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+}
+
+.animate__animated.animate__slideInUp {
+  --animate-duration: 10s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+/*----------------------fin animaciones------------------------------------------------*//*# sourceMappingURL=style.css.map */
