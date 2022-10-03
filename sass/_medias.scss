@@ -50,6 +50,9 @@
                 margin: auto;
             }
         } 
+        .subir-section{
+            left: 4rem;
+        }
         section.mayorista{
             & table{
                 width: 90%;
@@ -69,8 +72,9 @@
         }
         section.contacto{
             width: 90%;
+            height: auto;
             & #contacto{
-                margin: 5% 0;
+                margin-top: 10%;
             }
             & form fieldset input{
                 width: 90%;
@@ -81,10 +85,26 @@
             & .btn--default{
                 width: 250px;
             }
+            & .btnDos{
+                margin-bottom: 10%;
+            }
         }
     }
 }
-@media (min-width: 320px) and  (max-width: 805px){
+@media (min-width: 320px) and  (max-width: 768px){
+    section.combos {
+        width: 90%;
+        margin: auto;
+        & img{
+        display: none;
+        }
+        & .extend{
+            justify-content: start;
+            & ul li{
+                text-align: start;
+            }
+        }  
+    } 
     footer{
         font-size: 1rem;
         display: flex;
@@ -95,12 +115,10 @@
         }
     }
 }
-@media (min-width: 320px) and  (max-width: 1200px){
+@media (min-width: 768px) and  (max-width: 1200px){
     section.combos {
-        width: 90%;
-        margin: auto;
         & img{
-        display: none;
+            width: 100px;
         }
     } 
 }

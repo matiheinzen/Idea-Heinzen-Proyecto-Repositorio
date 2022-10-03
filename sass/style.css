@@ -169,6 +169,41 @@ section.articulos {
   justify-content: center;
 }
 
+.subir-section {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 1;
+}
+.subir-section .subir-btn {
+  background-color: #246d24;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+}
+.subir-section .subir-btn i {
+  position: absolute;
+  font-size: 5.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: 0.5s;
+}
+
+.show .subir-btn {
+  -webkit-animation: subir 0.5s ease-in-out;
+          animation: subir 0.5s ease-in-out;
+  width: 6rem;
+  height: 6rem;
+}
+.show .subir-btn i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /*--------------fin articulos----------------*/
 /*---------------------------mayorista----------------------*/
 section.mayorista table {
@@ -325,6 +360,9 @@ section.contacto .btnDos :hover {
     display: flex;
     margin: auto;
   }
+  body .subir-section {
+    left: 4rem;
+  }
   body section.mayorista table {
     width: 90%;
     height: auto;
@@ -342,9 +380,10 @@ section.contacto .btnDos :hover {
   }
   body section.contacto {
     width: 90%;
+    height: auto;
   }
   body section.contacto #contacto {
-    margin: 5% 0;
+    margin-top: 10%;
   }
   body section.contacto form fieldset input {
     width: 90%;
@@ -355,8 +394,24 @@ section.contacto .btnDos :hover {
   body section.contacto .btn--default {
     width: 250px;
   }
+  body section.contacto .btnDos {
+    margin-bottom: 10%;
+  }
 }
-@media (min-width: 320px) and (max-width: 805px) {
+@media (min-width: 320px) and (max-width: 768px) {
+  section.combos {
+    width: 90%;
+    margin: auto;
+  }
+  section.combos img {
+    display: none;
+  }
+  section.combos .extend, section.combos .extend--izquierda {
+    justify-content: start;
+  }
+  section.combos .extend ul li, section.combos .extend--izquierda ul li {
+    text-align: start;
+  }
   footer {
     font-size: 1rem;
     display: flex;
@@ -367,13 +422,9 @@ section.contacto .btnDos :hover {
     display: none;
   }
 }
-@media (min-width: 320px) and (max-width: 1200px) {
-  section.combos {
-    width: 90%;
-    margin: auto;
-  }
+@media (min-width: 768px) and (max-width: 1200px) {
   section.combos img {
-    display: none;
+    width: 100px;
   }
 }
 /*-------------------------------------fin medias-------------------------------------------------*/
@@ -427,4 +478,33 @@ section.combos .extend--izquierda {
   --animate-delay: 0.9s;
 }
 
+@-webkit-keyframes subir {
+  0% {
+    width: 0 0;
+    height: 0 0;
+  }
+  50% {
+    width: 6rem;
+    height: 6rem;
+  }
+  100% {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@keyframes subir {
+  0% {
+    width: 0 0;
+    height: 0 0;
+  }
+  50% {
+    width: 6rem;
+    height: 6rem;
+  }
+  100% {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 /*----------------------fin animaciones------------------------------------------------*//*# sourceMappingURL=style.css.map */
