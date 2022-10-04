@@ -15,13 +15,25 @@ section.contacto{
         align-items: center;
         justify-content: center;
     }
+    & form fieldset legend{
+        background-color: $fondoCompleto;
+        width: 350px;
+        height: auto;
+        border-radius: 100px;
+    }
+    & form fieldset label{
+        background-color: $fondoCompleto;
+        width: 200px;
+        height: auto;
+        border-radius: 100px;
+    }
     & form fieldset input{
         text-align: center;
         border-radius: 100px;
         width: 80%;
         padding: 10px 0;
         margin: 1% 0;
-        background-color: black;
+        background-color: $fondoCompleto;
         color: $colorText;
     }
     & form fieldset textarea{
@@ -29,7 +41,7 @@ section.contacto{
         width: 80%;
         padding: 20px 20px;
         border-radius: 50px;
-        background-color: black;
+        background-color: $fondoCompleto;
         color: $colorText;
         text-align: center;
     }
@@ -38,7 +50,6 @@ section.contacto{
         width: 500px;
         font-size:2rem;
         font-family: $textH1;
-        color: $colorH1;
         background-color: $fondoCompleto;
         border-radius: 10px;
     }
@@ -47,11 +58,11 @@ section.contacto{
     }
     .btnUno :hover{
         background-color: rgb(16, 92, 16);
-        color: black;
+        color: white;
     }
     .btnDos :hover{
         background-color: rgb(126, 22, 22);
-        color: black;
+        color: white;
     }
 }
 /*---------------------------------fin contacto------------------------*/

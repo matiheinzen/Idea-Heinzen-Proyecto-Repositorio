@@ -66,9 +66,10 @@
                 margin: 1% auto;
                 & th{
                     font-size: 1.10rem;
+                    padding: 5px 10px;
                 }
                 & td{
-                    padding: 10px 10px;
+                    padding: 10px;
                 }
                 & .codigo{
                     display: none;
@@ -86,6 +87,9 @@
             }
             & form fieldset textarea{
                 width: 90%;
+            }
+            & form fieldset legend{
+                width: 300px;
             }
             & .btn--default{
                 width: 250px;
