@@ -168,6 +168,14 @@ section.articulos {
   align-items: center;
   justify-content: center;
 }
+section.articulos .card {
+  background-color: #97826e;
+  border-color: black;
+  box-shadow: 5px 5px 5px;
+}
+section.articulos .card img {
+  padding: 3%;
+}
 
 .subir-section {
   position: fixed;
@@ -355,9 +363,14 @@ section.contacto .btnDos :hover {
     height: auto;
     margin: 1% 0;
   }
-  body section.articulos .tamanoArt {
-    width: 50%;
+  body section.articulos .card {
+    width: 75%;
+    height: auto;
+  }
+  body section.articulos .card img {
     display: flex;
+    justify-content: center;
+    width: 70%;
     margin: auto;
   }
   body .subir-section {

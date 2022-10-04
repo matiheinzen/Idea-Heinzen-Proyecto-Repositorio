@@ -5,6 +5,14 @@ section.articulos{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    & .card{
+        background-color: $colorArt;
+        border-color: black;
+        box-shadow: 5px 5px 5px ;
+        img{
+            padding: 3%;
+        }
+    }
 }
 .subir-section {
     position: fixed;
