@@ -82,6 +82,13 @@ header .navbar img {
   width: 100px;
   height: auto;
 }
+header .navbar .dropdown-menu {
+  background-color: #E0BA99;
+  border-color: black;
+}
+header .navbar .dropdown-menu :hover {
+  background-color: #E0BA99;
+}
 
 footer {
   display: flex;
@@ -344,6 +351,9 @@ section.contacto .btnDos :hover {
   body header .navbar img {
     width: 50px;
     height: auto;
+  }
+  body header .dropdown-menu {
+    border: none;
   }
   body p {
     font-size: 1rem;

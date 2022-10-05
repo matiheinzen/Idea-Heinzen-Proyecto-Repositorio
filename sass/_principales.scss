@@ -17,22 +17,29 @@ header{
         margin: 2% 2%;
         background-color:$colorNav ;
         box-shadow: 5px  5px 10px $colorText;
-    }
-    & .navbar ul li a{
-        text-decoration: none;
-        color: $colorText;
-        text-align: center;
-    }
-    & .navbar ul li a:hover{
-        text-shadow:2px 2px 2px white; 
-        color:black;
-    }
-    & .navbar img{
-        width: 100px;
-        height: auto;
-    }
+        &  ul li a{
+            text-decoration: none;
+            color: $colorText;
+            text-align: center;
+        }
+        & ul li a:hover{
+            text-shadow:2px 2px 2px white; 
+            color:black;
+        }
+        & img{
+            width: 100px;
+            height: auto;
+        }
+        & .dropdown-menu{
+            background-color:$colorNav ;
+            border-color: black;
+        }
+        & .dropdown-menu :hover{
+            background-color:$colorNav ;
+        }
+        
+    }   
 }
-
 footer{
     display: flex; 
     flex-direction: row;

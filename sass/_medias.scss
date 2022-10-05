@@ -6,10 +6,13 @@
             font-size: 1.2rem;
             & .navbar{
                 box-shadow: none;
+                &  img{
+                    width: 50px;
+                    height: auto;
+                }
             }
-            & .navbar img{
-                width: 50px;
-                height: auto;
+            & .dropdown-menu{
+                border: none;
             }
         }
         p{
