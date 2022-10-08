@@ -6,11 +6,40 @@ section.articulos{
     align-items: center;
     justify-content: center;
     & .card{
-        background-color: $colorArt;
+        background-color:$colorArt;
         border-color: black;
-        box-shadow: 5px 5px 5px ;
-        img{
-            padding: 3%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px;
+        width: 500px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+        margin: 1%;
+        & .card__img{
+            width: 40%;
+            & img{
+                width: 90%;
+                border-radius: 10px;
+            }
+        }
+        .card__text{
+            width: 60%;
+        }
+        & h5{
+            margin: 0%;
+        }
+        & p{
+            margin: 0%;
+        }
+    }
+    & #reversa{
+        flex-direction: row-reverse;
+        .card__img{
+            display: flex;
+            justify-content: end;
         }
     }
 }

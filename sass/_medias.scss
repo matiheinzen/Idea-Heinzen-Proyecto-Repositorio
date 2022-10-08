@@ -48,18 +48,19 @@
         }
         section.articulos{
             .card{
-                width: 75%;
+                width: 90%;
                 height: auto;
-                & img{
-                    display: flex;
-                    justify-content: center;
-                    width: 70%;
-                    margin: auto;
+                margin-bottom: 3%;
+            }
+            #reversa{
+                flex-direction: row;
+                .card__img{
+                    justify-content: start;
                 }
             }
-        } 
+        }
         .subir-section{
-            left: 4rem;
+            left: 3.5rem;
         }
         section.mayorista{
             & table{

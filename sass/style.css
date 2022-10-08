@@ -178,10 +178,39 @@ section.articulos {
 section.articulos .card {
   background-color: #97826e;
   border-color: black;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 1%;
 }
-section.articulos .card img {
-  padding: 3%;
+section.articulos .card .card__img {
+  width: 40%;
+}
+section.articulos .card .card__img img {
+  width: 90%;
+  border-radius: 10px;
+}
+section.articulos .card .card__text {
+  width: 60%;
+}
+section.articulos .card h5 {
+  margin: 0%;
+}
+section.articulos .card p {
+  margin: 0%;
+}
+section.articulos #reversa {
+  flex-direction: row-reverse;
+}
+section.articulos #reversa .card__img {
+  display: flex;
+  justify-content: end;
 }
 
 .subir-section {
@@ -385,17 +414,18 @@ section.contacto .btnDos :hover {
     margin: 1% 0;
   }
   body section.articulos .card {
-    width: 75%;
+    width: 90%;
     height: auto;
+    margin-bottom: 3%;
   }
-  body section.articulos .card img {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
+  body section.articulos #reversa {
+    flex-direction: row;
+  }
+  body section.articulos #reversa .card__img {
+    justify-content: start;
   }
   body .subir-section {
-    left: 4rem;
+    left: 3.5rem;
   }
   body section.mayorista table {
     width: 90%;
