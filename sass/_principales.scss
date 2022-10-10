@@ -44,9 +44,9 @@ footer{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     background-color: $colorNav;
-    justify-content: space-evenly;
     font-family: $textH2;
     font-size: 1.25rem;
     padding: 2% 5%;

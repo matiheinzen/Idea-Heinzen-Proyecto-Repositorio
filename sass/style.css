@@ -94,9 +94,9 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
   background-color: #E0BA99;
-  justify-content: space-evenly;
   font-family: "Mochiy Pop One", sans-serif;
   font-size: 1.25rem;
   padding: 2% 5%;
@@ -260,12 +260,7 @@ section.mayorista table {
 section.mayorista table th {
   font-family: "Mochiy Pop One", sans-serif;
   font-size: 1.5rem;
-  border: dotted black;
   padding: 20px;
-}
-section.mayorista table td.precio {
-  border-left: 3px dotted black;
-  border-bottom: 3px dotted black;
 }
 
 /*---------------------------fin mayorista-------------*/
@@ -320,15 +315,17 @@ section.contacto form fieldset.texContacto {
 }
 section.contacto form fieldset legend {
   background-color: #BA9A7F;
-  width: 350px;
+  width: auto;
   height: auto;
+  padding: 5px;
   border-radius: 100px;
 }
 section.contacto form fieldset label {
   background-color: #BA9A7F;
-  width: 200px;
+  width: auto;
   height: auto;
   border-radius: 100px;
+  padding: 5px;
 }
 section.contacto form fieldset input {
   text-align: center;
@@ -456,9 +453,6 @@ section.contacto .btnDos :hover {
   body section.contacto form fieldset textarea {
     width: 90%;
   }
-  body section.contacto form fieldset legend {
-    width: 300px;
-  }
   body section.contacto .btn--default {
     width: 250px;
   }
@@ -480,19 +474,41 @@ section.contacto .btnDos :hover {
   section.combos .extend ul li, section.combos .extend--izquierda ul li {
     text-align: start;
   }
+  aside.combos {
+    padding: 5px;
+    margin: 0;
+    margin-right: 5%;
+  }
   footer {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  footer #no {
-    display: none;
-  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   section.combos img {
     width: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  main.inicio {
+    width: 90%;
+  }
+  main.inicio h1 {
+    font-size: 2rem;
+  }
+  main.inicio img {
+    height: 200px;
+  }
+  section.inicio {
+    width: 90%;
+    margin-left: auto;
+  }
+  aside.inicio .carousel {
+    width: 90%;
+    height: auto;
+    margin: 1% 0;
   }
 }
 /*-------------------------------------fin medias-------------------------------------------------*/
@@ -535,6 +551,7 @@ section.combos .extend, section.combos .extend--izquierda {
 }
 section.combos .extend--izquierda {
   background-image: linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+  flex-direction: row-reverse;
 }
 
 .animate__animated.animate__slideInUp {

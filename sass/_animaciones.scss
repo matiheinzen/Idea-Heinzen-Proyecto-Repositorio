@@ -27,6 +27,7 @@ section.combos{
     .extend--izquierda{
         @extend .extend;
         background-image:linear-gradient(135deg, green, blue, brown, rgb(138, 70, 116), black);
+        flex-direction: row-reverse;
     }
 }
 .animate__animated.animate__slideInUp {

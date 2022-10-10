@@ -5,16 +5,11 @@ section.mayorista{
         border: 3px dotted black;
         text-align: center;
         font-size: 1.25rem;
-        font-family: $textP;   
+        font-family: $textP;
         & th{
             font-family: $textH2;
             font-size: 1.5rem;
-            border: dotted black;
             padding: 20px;
-        }
-        & td.precio{
-            border-left: 3px dotted black;
-            border-bottom: 3px dotted black;
         }
     }
 }

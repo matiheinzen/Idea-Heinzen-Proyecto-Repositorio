@@ -17,15 +17,17 @@ section.contacto{
     }
     & form fieldset legend{
         background-color: $fondoCompleto;
-        width: 350px;
+        width: auto;
         height: auto;
+        padding: 5px;
         border-radius: 100px;
     }
     & form fieldset label{
         background-color: $fondoCompleto;
-        width: 200px;
+        width: auto;
         height: auto;
         border-radius: 100px;
+        padding: 5px;
     }
     & form fieldset input{
         text-align: center;
